@@ -20,7 +20,14 @@ setup(
             }
         )
     ],
-    cmdclass={'build_ext': BuildExtension}
+    cmdclass={'build_ext': BuildExtension},
+    install_requires=[
+        'matplotlib>=2.2.3',
+        'numpy>=1.18.5',
+        'pickleshare>=0.7.5',
+        'PyYAML>=5.3.1',
+        'torchvision>=0.6.1',
+        ],
 )
 
 setup(
@@ -40,11 +47,25 @@ setup(
             }
         )
     ],
-    cmdclass={'build_ext': BuildExtension}
+    cmdclass={'build_ext': BuildExtension},
+    install_requires=[
+        'matplotlib>=2.2.3',
+        'numpy>=1.18.5',
+        'pickleshare>=0.7.5',
+        'PyYAML>=5.3.1',
+        'torchvision>=0.6.1',
+        ],
 )
 
 setup(
     name='slayerSNN',
     packages = ['slayerSNN'],
     package_dir = {'slayerSNN': 'src'},
+    install_requires = [
+        'matplotlib>=2.2.3',
+        'numpy>=1.18.5', 
+        'pickleshare>=0.7.5',
+        'PyYAML>=5.3.1',
+        'torchvision>=0.6.1',
+        ],
 )
